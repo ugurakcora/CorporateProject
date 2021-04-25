@@ -71,7 +71,7 @@ header img {
   color: #fff
 }
 .slide-content--primary h1{
-  color: rgb(157,10,107);
+  color: rgb(157,10,109);
 }
 .slide-content--primary h2{
   color: #1d1d1b;
@@ -81,7 +81,7 @@ header img {
   color: #000;
 }
 .slide-content--primary a b{
-  color: rgb(157,10,107);
+  color: rgb(157,10,109);
 }
 .slide-content h1,
 .slide-content h2,
@@ -246,7 +246,7 @@ header img {
   position: absolute;
   left: -40px;
   font-weight: 300;
-  color: rgba(157, 6, 173, 0.6);
+  color: rgba(157, 10, 109, 0.6);
   font-size: 22px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -270,7 +270,7 @@ header img {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active b {
-  color: rgb(157,10,107);
+  color: rgb(157,10,109);
 }
 
 .swiper-pagination-bullet:hover {
@@ -278,7 +278,7 @@ header img {
 }
 
 .swiper-pagination-bullet:hover b {
-  color: rgb(157,10,107);
+  color: rgb(157,10,109);
 }
 
 footer {
@@ -348,7 +348,7 @@ footer ul li::before {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: rgb(157,10,107);
+  background-color: rgb(157,10,109);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 300ms all;
@@ -417,7 +417,7 @@ footer ul li:hover a {
 .langs ol li a {
   text-align: center;
   text-decoration: none;
-  color: rgb(157, 6, 173);
+  color: rgb(157,10,109);
   /* color: #fff; */
   display: block;
   width: 60px;
@@ -425,7 +425,7 @@ footer ul li:hover a {
   text-transform: uppercase;
   font-weight: 700;
   background-color: transparent;
-  border: 1px solid rgb(157, 6, 173);
+  border: 1px solid rgb(157,10,109);
   position: relative;
   -webkit-transition: 300ms all;
   -moz-transition: 300ms all;
@@ -459,7 +459,7 @@ footer ul li:hover a {
 }
 
 .langs ol li a:hover {
-  color: rgb(157,10,107) !important;
+  color: rgb(157,10,109) !important;
 }
 
 .langs ol li a:hover::after {
@@ -469,5 +469,5 @@ footer ul li:hover a {
 
 .langs ol li a.active {
   color: #fff;
-  background-color: rgb(157, 6, 173);
+  background-color: rgb(157,10,109);
 }
