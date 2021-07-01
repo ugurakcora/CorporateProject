@@ -197,7 +197,7 @@ header img {
 }
 
 .swiper-pagination {
-  top: 50%;
+  /* top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -208,13 +208,25 @@ header img {
   bottom: auto !important;
   left: auto !important;
   width: 100px !important;
-  height: auto !important
+  height: auto !important */
+
+  top: -13%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  padding: 0 !important;
+  left: 50%;
+  transform: rotate(90deg);
 }
 
 @media (max-width: 991px) {
   .swiper-pagination {
     width: 3px !important;
     display: none
+  }
+}
+@media (max-width: 1440px) {
+  .swiper-pagination {
+    top: -5%;
   }
 }
 
@@ -248,14 +260,16 @@ header img {
   font-weight: 300;
   color: rgba(157, 10, 109, 0.6);
   font-size: 22px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
+  /* top: 50%; */
+  /* -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   -webkit-transition: 300ms all;
   -moz-transition: 300ms all;
-  transition: 300ms all
+  transition: 300ms all;
+  transform: rotate(270deg);
+  top: 35%;
 }
 
 @media (max-width: 1514px) {
@@ -367,12 +381,17 @@ footer ul li a {
 footer ul li.footer-active::before,
 footer ul li:hover::before {
   opacity: 1;
-  visibility: visible
+  visibility: visible;
 }
+
 
 footer ul li.footer-active a,
 footer ul li:hover a {
   opacity: 1
+}
+footer ul li.footer-active a,
+footer ul li:hover a img{
+  transform: scale(1.2); 
 }
 
 @media (max-width: 1514px) {
@@ -420,8 +439,8 @@ footer ul li:hover a {
   color: rgb(157,10,109);
   /* color: #fff; */
   display: block;
-  width: 60px;
-  padding: 3px 0;
+  /* width: 80px; */
+  /* padding: 3px 0; */
   text-transform: uppercase;
   font-weight: 700;
   background-color: transparent;
@@ -429,7 +448,23 @@ footer ul li:hover a {
   position: relative;
   -webkit-transition: 300ms all;
   -moz-transition: 300ms all;
-  transition: 300ms all
+  transition: 300ms all;
+  width: 40px;
+  height: 40px;
+  /* width: 60px;
+  height: 60px; */
+  border-radius: 50%;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.langs ol li a img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 @media (max-width: 991px) {
@@ -444,19 +479,28 @@ footer ul li:hover a {
   z-index: 999
 }
 
-.langs ol li a::after {
-  content: "";
+/* .langs ol li a::after {
+  content: "Türkçe";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0; */
+  /* right: 0; */
+  /* right: -100px;
   width: 0;
   height: 100%;
   background-color: #fff;
   z-index: -1;
   -webkit-transition: 300ms all;
   -moz-transition: 300ms all;
-  transition: 300ms all
-}
+  transition: 300ms all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px; */
+/* }
+.langs ol li:last-child a::after {
+  content: 'İngilizce';
+} */
+
 
 .langs ol li a:hover {
   color: rgb(157,10,109) !important;
@@ -464,7 +508,8 @@ footer ul li:hover a {
 
 .langs ol li a:hover::after {
   width: 100%;
-  z-index: 1
+  z-index: 1;
+  right: 0;
 }
 
 .langs ol li a.active {
